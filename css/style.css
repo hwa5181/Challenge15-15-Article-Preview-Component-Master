@@ -71,7 +71,7 @@ main {
         "bottom" ;
     /* min-width: 360px; */
     max-width: calc(600/16*1rem);
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     /* overflow: hidden; */
     /* position: relative; */
     /* background-color: blue; */
@@ -155,9 +155,17 @@ main {
     z-index: 1;
 }
 
+.share-button:hover {
+    background-color: var(--desaturated-dark-blue);
+}
+
 .share-button .icon-share {
     width: 1rem;
     transform: translate(50%, 50%);
+}
+
+.share-button:hover .icon-share {
+    filter: brightness(100);
 }
 
 .share-container {
@@ -192,7 +200,7 @@ main {
     border-right: calc(10/16*1rem) solid transparent;
     border-top: calc(10/16*1rem) solid var(--very-dark-grayish-blue);
     position: absolute;
-    top: calc(60/16*1rem);
+    top: calc(59/16*1rem);
     opacity: 0;
     transition: 0.3s ease-in;
 }
